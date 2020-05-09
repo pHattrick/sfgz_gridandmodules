@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font: 150% sans-serif;
+      background: #ECF0F1;
+    }
+
+    /* .raster {
+      background: #E74C3C;
+      border: 1px #2C3E50 solid;
+      border-radius: 0.2em;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+    } */
+
+    .raster {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 20px;
+    }
+
+
+
+@media screen and (max-width: 48em){
+body{
+background-color: black;
+}
+
+
+.raster div{
+  color: rgb(255,0,0);
+  justify-content: center;
+}
+
+.raster .U{
+  grid-area: 1 / 2 / 2 / 2;
+}
+
+.raster .R{
+  grid-area: 1 / 1 / 2 / 2
+}
+}
+
+  </style>
+  <title>Gridlayout</title>
+</head>
+
+<body>
+
+<div class="raster">
+<div class="U">U</div>
+<div class="R">R</div>
+<div class="I">I</div>
+<div class="N">N</div>
+</div>
+
+
+</body>
+</html>

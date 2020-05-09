@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Übung Teil 2</title>
+<style>
+
+{box-sizing: border-box;}
+
+body {
+   text-align: center;
+   font-family: sans-serif;
+   background-color: black;
+   color: #F0F0ED;
+}
+
+.uebergang p {
+  font-size: 100%;
+  color: yellow;
+  padding-top: 0px;
+  border-top: 10px;
+
+  transition: all 4s ease;
+
+}
+.uebergang:hover p {
+ font-size: 500%;
+ color: blue;
+ border-top: 200px;
+}
+
+/* .uebergang a:hover {
+  font-size: 300%;
+  padding-left: 100px;
+  color: #F0F0ED;
+  padding-top: 100px;
+  background-color: green;
+} */
+
+.uebergang :nth-child(2) {
+  transition-timing-function: ease-in;
+  transition-delay: 1s;
+
+}
+.uebergang :nth-child(3) {
+  transition-timing-function: ease-out;
+  font-size: 250%;
+}
+.uebergang :nth-child(4) {
+  transition-timing-function: ease-in-out;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+  <div class="uebergang">
+  <p>Wänn</p>
+  <p>das Wort</p>
+  <p>WÄNN</p>
+  <p>nöd wär</p>
+  </div>
+
+</body>
+</html>
