@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
+
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,8 +12,9 @@
     }
 
     body {
-      font: 150% sans-serif;
-      background: #ECF0F1;
+      font-family: 'Arvo', serif;
+      font-size: 5rem;
+      background: #d2da01;
     }
 
     /* .raster {
@@ -22,12 +26,22 @@
       font-size: 2em;
     } */
 
+    /* p {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: rgb(43, 226, 195);
+      font-size: 10em;
+    } */
+
     .raster {
       display: grid;
       grid-auto-flow: column;
       grid-gap: 20px;
+      height: 1000px;
+      grid-template-columns: repeat (4, 100px);
+      justify-content: center;
+      align-content: center;
+      align-items: center;
     }
-
 
 
 @media screen and (max-width: 48em){
@@ -37,16 +51,17 @@ background-color: black;
 
 
 .raster div{
-  color: rgb(255,0,0);
+  color: #ffffff;
   justify-content: center;
+
 }
 
-.raster .U{
+/* .raster .U{
   grid-area: 1 / 2 / 2 / 2;
-}
+} */
 
-.raster .R{
-  grid-area: 1 / 1 / 2 / 2
+.R{
+  order: -1;
 }
 }
 
