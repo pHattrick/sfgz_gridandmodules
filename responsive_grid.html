@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Grid</title>
+
+  <style>
+    body > * {
+      margin: 4px;
+      padding: 5px;
+      border-radius: 7px;
+    }
+
+    body {
+      font: 120% sans-serif;
+      max-width: 960px;
+      margin: auto;
+      background: #00ff14;
+      display: grid;
+      grid-template-areas:
+      "... ... header"
+      "... ... article"
+      "... ... nav"
+      " ... ... section"
+      "aside aside ..."
+      "footer footer ... ";
+      grid-template-columns: 30% 1fr 30%;
+    }
+
+/* wänn */
+    header {
+      /* background: #004056; */
+      /* color: #FFFFCB; */
+      grid-area: header;
+      font-family: serif;
+      font-size: 21px
+    }
+
+/* das wort */
+    article {
+      /* background: #FFFFCB; */
+      grid-area: article;
+      font-size: 34px;
+    }
+
+/* wänn */
+    nav {
+      /* background: #74bec7; */
+      grid-area: nav;
+      font-family: serif;
+      font-size: 21px;
+
+    }
+
+/* nöd wär */
+    section {
+      /* background: #c9ffd5; */
+      grid-area: section;
+      font-size: 34px;
+    }
+
+/* wär villicht*/
+    aside {
+      /* background: #2C858D; */
+      grid-area: aside;
+      font-size: 34px;
+    }
+
+/* alles anderscht */
+    footer {
+      /* background: #004056; */
+      /* color: #FFFFCB; */
+      grid-area: footer;
+      font-size: 34px;
+    }
+
+    @media all and (max-width: 50em) {
+      body {
+        grid-template-areas:
+        " aside aside "
+        "footer footer"
+        "... header"
+        "... article"
+        "... nav"
+        " ... section";
+        grid-template-columns: 50% 50%;
+      }
+    }
+
+    @media all and (max-width: 30em) {
+      body {
+        display: block;
+      }
+    }
+  </style>
+
+</head>
+<body>
+<header><h2>wänn</h2></header>
+<article><h2>das wort</h2></article>
+<nav><h2>wänn</h2></nav>
+<section><h2>nöd wär</h2></section>
+<aside><h2>wär villicht</h2></aside>
+<footer><h2>alles anderscht</h2></footer>
+</body>
+</html>

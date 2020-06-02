@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid - Just a Try</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      /* font: 100% sans-serif; */
+      background: white;
+    }
+
+    .raster div {
+      /* background: #E74C3C; */
+      /* border: 1px #2C3E50 solid; */
+      /* border-radius: 0.2em; */
+      /* text-align: center; */
+      font-family: helvetica;
+    }
+
+    .raster {
+      display: grid;
+      max-width: 800px;
+      min-height: 600px;
+      grid-template-columns: 1fr 25% 25% 1fr;
+      grid-template-rows: repeat(9, 130px);
+    }
+
+    .a {
+      grid-column: 2/4;
+      grid-row: 2;
+      font-size: 21px;
+      text-align: left;
+      align-self: center;
+    }
+
+    .b {
+      grid-column: 2/4;
+      grid-row: 3;
+      font-size: 21px;
+      align-self: center;
+    }
+
+    .c {
+      grid-column: 2/4;
+      grid-row: 4;
+      font-size: 21px;
+      font-weight: bold;
+      align-self: center;
+      /* transform: rotate(30deg); */
+      /* transform-origin: 0%; */
+      /* text-align: center; */
+    }
+
+    .d {
+      grid-column: 2/4;
+      grid-row: 5;
+      font-size: 89px;
+      font-weight: bold;
+      align-self: center;
+      /* transform: rotate(30deg); */
+      /* transform-origin: 0%; */
+      /* text-align: center; */
+    }
+
+    .e {
+      grid-column: 2/5;
+      grid-row: 6;
+      font-size: 21px;
+      align-self: center;
+    }
+
+    .f {
+      grid-column: 2/5;
+      grid-row: 7;
+      font-size: 21px;
+      align-self: center;
+    }
+
+    .g {
+      grid-column: 2/5;
+      grid-row: 8;
+      font-size: 144px;
+      font-weight: bold;
+      /* transform: rotate(30deg); */
+      /* transform-origin: 0%; */
+      align-self: center;
+    }
+
+    .h {
+      grid-column: 2/5;
+      grid-row: 9;
+      font-size: 21px;
+
+      align-self: center;
+    }
+
+    .i {
+      grid-column: 1/4;
+      grid-row: 1;
+      font-size: 377px;
+      color: #fa989a;
+      font-weight: bold;
+      transform: rotate(0deg);
+      transform-origin: 100% 0%;
+      z-index: -1;
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+<div class="raster">
+  <div class="a">_ _ _ _ das wort</div>
+  <div class="b">_ _ _ _ nöd</div>
+  <div class="c">wär,</div>
+  <div class="d">wär</div>
+  <div class="e">villicht alles anderscht,</div>
+  <div class="f">ich</div>
+  <div class="g">wär</div>
+  <div class="h">scho längscht Millionär</div>
+  <div class="i">wänn</div>
+
+</div>
+</body>
+
+</html>
