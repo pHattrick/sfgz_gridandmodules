@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Projektarbeit-Start</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      /* font: 100% sans-serif; */
+      background: gray;
+    }
+
+    .raster div {
+      /* background: #E74C3C; */
+      /* border: 1px #2C3E50 solid; */
+      /* border-radius: 0.2em; */
+      text-align: left;
+      font-family: helvetica;
+      /* line-height: 1.8rem; */
+      /* font-size: 2em; */
+    }
+
+    .raster {
+      display: grid;
+      max-width: 1024px;
+      min-height: 400px;
+      grid-template-columns: 30% 1fr 30%;
+      grid-template-rows: repeat(5,auto);
+      grid-gap:10px;
+      padding:10px;
+      border-bottom: 200px;
+    }
+
+    .a {
+      grid-column: 2/3;
+      grid-row: 6;
+      font-size: 21px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      text-align:right;
+    }
+
+     .b {
+      grid-column: 2/3;
+      grid-row: 5;
+      font-size: 34px;
+      color: white;
+    }
+
+    .c {
+      grid-column: 2/3;
+      grid-row: 4;
+      font-size: 55px;
+      color: white;
+    }
+
+    .d {
+      grid-column: 2/3;
+      grid-row: 3;
+      font-size: 21px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      text-align:right;
+    }
+
+
+    .e {
+      grid-column: 2/3;
+      grid-row: 2;
+      font-size: 89px;
+      color: white;
+    }
+
+    .f {
+      grid-column: 2/3;
+      grid-row: 1;
+      font-size: 21px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      text-align:right;
+      /* display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content:center; */
+    }
+
+    .g {
+      grid-column: 2/3;
+      grid-row: -7;
+      font-size: 144px;
+      color: white;
+    }
+
+
+  </style>
+
+
+</head>
+
+<body>
+<div class="raster">
+  <div class="a">____ das Wort ____ nöd </div>
+  <div class="b">wär</div>
+  <div class="c">wär</div>
+  <div class="d">villicht alles anderscht, ich</div>
+  <div class="e">wär</div>
+  <div class="f">scho längscht Millionär. ____ das Wort ____ nöd</div>
+  <div class="g">wär</div>
+
+</div>
+</body>
+
+</html>
