@@ -2,9 +2,6 @@
 <html lang="de">
 <head>
 
-
-
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Projektarbeit-Start-2</title>
@@ -18,10 +15,7 @@
     body {
       /* font: 100% sans-serif; */
       background: gray;
-
     }
-
-
 
     .raster div {
       /* background: #E74C3C; */
@@ -47,8 +41,6 @@
       width:100vw;
       /* background-color: green; */
     }
-
-
 
 
             #sequenz1{
@@ -82,6 +74,17 @@ background: lightgreen;
       /* justify-self: end; */
       /* text-align: right; */
       }
+
+      #myAudio {
+        grid-column: 1/1;
+        grid-row: 1/1;
+        /* scale: 70%;
+        transform: translateX(20px)rotate(90deg);
+        transform-origin: left;
+        align-self: start; */
+        /* justify-self: end; */
+        /* text-align: right; */
+        }
 
     .a {
       grid-column: 2/3;
@@ -327,16 +330,25 @@ background: lightgreen;
 
 <body>
 
+  <button onclick="playAudio()" type="button">Play Audio</button>
+  <button onclick="pauseAudio()" type="button">Pause Audio</button>
 
   <section id="sequenz1" class="raster">
+
+    <audio id="myAudio">
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="waenn.mp3" type="waenn/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
     <audio id="audio_with_controls" src="waenn.mp3" controls>
     </audio>
 
       <div class="a">&#8674; please scroll </div>
 
-  </section>
 
+
+  </section>
 
   <section id="sequenz2" class="raster">
     <div class="aa">&#9835;  &#x202F; &#95; ​&#x202F; &#95; &#x202F; &#95; &#x202F; &#95; &#x202F;  das Wort  &#x202F; &#95; ​&#x202F; &#95; &#x202F; &#95; &#x202F; &#95; &#x202F;  nöd </div>
@@ -364,4 +376,27 @@ background: lightgreen;
 
 </body>
 <script src="viewport.js" ></script>
+
+<script>
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+</script>
+
+<script>
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            setTimeout(function(){
+                window.location.href = 'responsive_grid.html'
+            }, 1000)
+        }
+    };
+</script>
+
 </html>
