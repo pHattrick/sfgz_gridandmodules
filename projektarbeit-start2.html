@@ -18,6 +18,7 @@
     body {
       /* font: 100% sans-serif; */
       background: gray;
+
     }
 
 
@@ -37,8 +38,8 @@
       display: grid;
       max-width: 1024px;
       min-height: 400px;
-      grid-template-columns: 30% 1fr 1fr;
-      grid-template-rows: 200px, repeat(7,auto);
+      grid-template-columns: 10% 1fr 1fr;
+      grid-template-rows: 200px, repeat(7,1fr);
       grid-gap:8px;
       padding:10px;
       border-bottom: 200px;
@@ -51,11 +52,12 @@
 
 
             #sequenz1{
-/* background: blue; */
+background: lightblue;
             }
 
             #sequenz2{
-/* background: red; */
+background: lightgreen;
+/* background: lightblue; */
             }
 
             /* section {
@@ -63,17 +65,42 @@
                 grid-area: section;
             } */
 
+            #sequenz3{
+background: lightgreen;
+/* background: lightblue; */
+            }
 
+
+    #audio_with_controls {
+      grid-column: 2/3;
+      grid-row: 1/1;
+      scale: 70%;
+      transform: translateX(20px)rotate(90deg);
+      transform-origin: left;
+
+      align-self: start;
+      /* justify-self: end; */
+      /* text-align: right; */
+      }
 
     .a {
+      grid-column: 2/3;
+      grid-row: 2;
+      font-size: 21px;
+      writing-mode: vertical-lr;
+
+      align-self: end;
+      margin-bottom: 10rem;
+    }
+
+    .aa {
       grid-column: 2/3;
       grid-row: 1;
       font-size: 21px;
       writing-mode: vertical-lr;
 
-      text-align:left;
-    }
 
+    }
 
      .b {
       grid-column: 2/3;
@@ -212,7 +239,7 @@
 
     .j {
       grid-column: 2/3;
-      grid-row: 10;
+      grid-row: 11;
       font-size: 21px;
       height: 5ch;
       transform: translateX(-30px) rotate(90deg);
@@ -223,7 +250,7 @@
     }
     .j.isinview  {
       grid-column: 2/3;
-      grid-row: 10;
+      grid-row: 11;
       font-size: 377px;
       color: white;
       color: white;
@@ -231,15 +258,67 @@
       transform: rotate(0deg);
     }
 
-
     .k {
       grid-column: 2/3;
-      grid-row: 11;
+      grid-row: 12;
       font-size: 21px;
       writing-mode: vertical-lr;
       /* transform: rotate(180deg); */
       text-align:right;
     }
+
+
+
+
+
+    .w{
+      grid-column: 2/3;
+      grid-row: 1;
+      font-size: 610px;
+      text-align: center;
+      /* writing-mode: vertical-lr; */
+      /* transform: rotate(180deg); */
+      text-align:right;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .ae{
+      grid-column: 2/3;
+      grid-row: 2;
+      font-size: 610px;
+      text-align: center;
+      /* writing-mode: vertical-lr; */
+      /* transform: rotate(180deg); */
+      text-align:right;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .n{
+      grid-column: 2/3;
+      grid-row: 3;
+      font-size: 610px;
+      text-align: center;
+      /* writing-mode: vertical-lr; */
+      /* transform: rotate(180deg); */
+      text-align:right;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .nn{
+      grid-column: 2/3;
+      grid-row: 4;
+      font-size: 610px;
+      text-align: center;
+      /* writing-mode: vertical-lr; */
+      /* transform: rotate(180deg); */
+      text-align:right;
+      align-self: center;
+      justify-self: center;
+    }
+
 
   </style>
 
@@ -248,33 +327,40 @@
 
 <body>
 
+
   <section id="sequenz1" class="raster">
 
+    <audio id="audio_with_controls" src="waenn.mp3" controls>
+    </audio>
 
-      <div class="a">____ das Wort ____ nöd </div>
-      <div class="b checkview">wär,</div>
-      <div class="c">wär</div>
-      <div class="d">villicht alles anderscht, ich</div>
-      <div class="e checkview">wär</div>
-      <div class="f">scho längscht Millionär. ____ das Wort ____ nöd</div>
-      <div class="g checkview">wär,</div>
-      <div class="h checkview">wär</div>
-      <div class="i">villicht alles anderscht und d Erdä</div>
-      <div class="j checkview">drehti</div>
-      <div class="k">sich umgekehrt.</div>
-
-
-
+      <div class="a">&#8674; please scroll </div>
 
   </section>
+
 
   <section id="sequenz2" class="raster">
-    <h2>section 2</h2>
+    <div class="aa">&#9835;  &#x202F; &#95; ​&#x202F; &#95; &#x202F; &#95; &#x202F; &#95; &#x202F;  das Wort  &#x202F; &#95; ​&#x202F; &#95; &#x202F; &#95; &#x202F; &#95; &#x202F;  nöd </div>
+    <div class="b checkview">wär,</div>
+    <div class="c checkview">wär</div>
+    <div class="d">villicht alles anderscht, ich</div>
+    <div class="e checkview">wär</div>
+    <div class="f">scho längscht Millionär. &#x202F; &#95; ​&#x202F; &#95; &#x202F; &#95; &#x202F; &#95; &#x202F; das Wort ____ nöd</div>
+    <div class="g checkview">wär,</div>
+    <div class="h checkview">wär</div>
+    <div class="i">villicht alles anderscht und d Erdä</div>
+    <div class="j checkview">drehti</div>
+    <div class="k">sich umgekehrt. &#9835;</div>
+
   </section>
 
-<audio id="audio_with_controls" controls>
-    src="waenn.mp3"
-</audio>
+
+<section id="sequenz2" class="raster">
+   <div class="w">w</div>
+   <div class="ae">ä</div>
+   <div class="n">n</div>
+   <div class="nn">n</div>
+</section>
+
 
 </body>
 <script src="viewport.js" ></script>
