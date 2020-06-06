@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Projektarbeit-Start-2</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      /* font: 100% sans-serif; */
+      background: gray;
+    }
+
+
+
+    .raster div {
+      /* background: #E74C3C; */
+      /* border: 1px #2C3E50 solid; */
+      /* border-radius: 0.2em; */
+      text-align: left;
+      font-family: helvetica;
+      /* line-height: 1.8rem; */
+      /* font-size: 2em; */
+      /* background-color: yellow; */
+    }
+
+    .raster {
+      display: grid;
+      max-width: 1024px;
+      min-height: 400px;
+      grid-template-columns: 30% 1fr 1fr;
+      grid-template-rows: 200px, repeat(7,auto);
+      grid-gap:8px;
+      padding:10px;
+      border-bottom: 200px;
+      min-height:110vh;
+      width:100vw;
+      /* background-color: green; */
+    }
+
+
+
+
+            #sequenz1{
+/* background: blue; */
+            }
+
+            #sequenz2{
+/* background: red; */
+            }
+
+            /* section {
+                background: #c9ffd5;
+                grid-area: section;
+            } */
+
+
+
+    .a {
+      grid-column: 2/3;
+      grid-row: 1;
+      font-size: 21px;
+      writing-mode: vertical-lr;
+
+      text-align:left;
+    }
+
+
+     .b {
+      grid-column: 2/3;
+      grid-row: 2;
+      font-size: 21px;
+      height: 4ch;
+      transform: translateX(-18px) rotate(90deg);
+      transition: 3s ease;
+      align-self: start;
+      justify-self: start;
+    }
+    .b.isinview  {
+     grid-column: 2/3;
+     grid-row: 2;
+     font-size: 34px;
+     color: white;
+     height: 34px;
+     transform: rotate(0deg);
+    }
+
+
+    .c {
+      grid-column: 2/3;
+      grid-row: 3;
+      font-size: 21px;
+      height: 3ch;
+      transform: translateX(-10px) rotate(90deg);
+      transition: 5s ease;
+      align-self: start;
+      justify-self: start;
+    }
+    .c.isinview  {
+      grid-column: 2/3;
+      grid-row: 3;
+      font-size: 55px;
+      color: white;
+      color: white;
+      height: 55px;
+      transform: rotate(0deg);
+    }
+
+
+    .d {
+      grid-column: 2/3;
+      grid-row: 4;
+      font-size: 21px;
+      writing-mode: vertical-lr;
+      /* transform: rotate(180deg); */
+      text-align:right;
+    }
+
+
+    .e {
+      grid-column: 2/3;
+      grid-row: 5;
+      font-size: 21px;
+      height: 3ch;
+      transform: translateX(-10px) rotate(90deg);
+      transition: 3s ease;
+      align-self: start;
+      justify-self: start;
+    }
+    .e.isinview {
+      grid-column: 2/3;
+      grid-row: 5;
+      font-size: 89px;
+      height: 89px;
+      color: white;
+      transform: rotate(0deg);
+    }
+
+
+    .f {
+      grid-column: 2/3;
+      grid-row: 6;
+      font-size: 21px;
+      writing-mode: vertical-lr;
+      /* transform: rotate(180deg); */
+      text-align:right;
+      /* display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content:center; */
+    }
+
+
+    .g {
+      grid-column: 2/3;
+      grid-row: 7;
+      font-size: 21px;
+      height: 3ch;
+      transform: translateX(-12px) rotate(90deg);
+      transition: 3s ease;
+      align-self: start;
+      justify-self: start;
+    }
+    .g.isinview  {
+      grid-column: 2/3;
+      grid-row: 7;
+      font-size: 144px;
+      color: white;
+      height: 144px;
+      transform: rotate(0deg);
+    }
+
+
+    .h {
+      grid-column: 2/3;
+      grid-row: 8;
+      font-size: 21px;
+      height: 3ch;
+      transform: translateX(-9px) rotate(90deg);
+      transition: 3s ease;
+      align-self: start;
+      justify-self: start;
+    }
+    .h.isinview  {
+      grid-column: 2/3;
+      grid-row: 8;
+      font-size: 233px;
+      color: white;
+      height: 233px;
+      transform: rotate(0deg);
+    }
+
+
+    .i {
+      grid-column: 2/3;
+      grid-row: 9;
+      font-size: 21px;
+      writing-mode: vertical-lr;
+      /* transform: rotate(180deg); */
+      text-align:right;
+    }
+
+
+    .j {
+      grid-column: 2/3;
+      grid-row: 10;
+      font-size: 21px;
+      height: 5ch;
+      transform: translateX(-30px) rotate(90deg);
+      transition: 3s ease;
+      align-self: start;
+      justify-self: start;
+
+    }
+    .j.isinview  {
+      grid-column: 2/3;
+      grid-row: 10;
+      font-size: 377px;
+      color: white;
+      color: white;
+      height: 377px;
+      transform: rotate(0deg);
+    }
+
+
+    .k {
+      grid-column: 2/3;
+      grid-row: 11;
+      font-size: 21px;
+      writing-mode: vertical-lr;
+      /* transform: rotate(180deg); */
+      text-align:right;
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+
+  <section id="sequenz1" class="raster">
+
+
+      <div class="a">____ das Wort ____ nöd </div>
+      <div class="b checkview">wär,</div>
+      <div class="c">wär</div>
+      <div class="d">villicht alles anderscht, ich</div>
+      <div class="e checkview">wär</div>
+      <div class="f">scho längscht Millionär. ____ das Wort ____ nöd</div>
+      <div class="g checkview">wär,</div>
+      <div class="h checkview">wär</div>
+      <div class="i">villicht alles anderscht und d Erdä</div>
+      <div class="j checkview">drehti</div>
+      <div class="k">sich umgekehrt.</div>
+
+
+
+
+  </section>
+
+  <section id="sequenz2" class="raster">
+    <h2>section 2</h2>
+  </section>
+
+<audio id="audio_with_controls" controls>
+    src="waenn.mp3"
+</audio>
+
+</body>
+<script src="viewport.js" ></script>
+</html>
