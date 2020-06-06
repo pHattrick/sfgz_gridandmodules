@@ -75,13 +75,13 @@ background: lightblue;
     #myAudio {
         grid-column: 3/3;
         grid-row: 1;
-        color: green;
+        /* color: green;
         /* scale: 70%; */
         transform: translateX(20px)rotate(90deg);
         transform-origin: left;
         align-self: start;
         justify-self: end;
-        text-align: right;
+        text-align: right; */
         }
 
 
@@ -319,8 +319,15 @@ background: lightblue;
       justify-self: center;
     }
 
-    button{
-      color: green;
+    button.play{
+      background-color: white;
+      transparency: 0%;
+      height: 20px;
+      grid-column: 3/3;
+      grid-row: 1;
+    }
+
+    button.pause{
       height: 20px;
     }
 
@@ -333,8 +340,8 @@ background: lightblue;
 
   <section id="sequenz1" class="raster">
 
-    <button onclick="playAudio()" type="button">▶️</button>
-    <button onclick="pauseAudio()" type="button">⏸</button>
+    <button onclick="playAudio()" type="button" class="play">▶️</button>
+    <button onclick="pauseAudio()" type="button" class="pause">⏸</button>
 
     <audio id="myAudio">
       <!-- <source src="horse.ogg" type="audio/ogg"> -->
