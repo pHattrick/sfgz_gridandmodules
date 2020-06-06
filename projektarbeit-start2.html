@@ -58,33 +58,32 @@ background: lightgreen;
             } */
 
             #sequenz3{
-background: lightgreen;
-/* background: lightblue; */
+/* background: lightgreen; */
+background: lightblue;
             }
 
 
-    #audio_with_controls {
+    /* #audio_with_controls {
       grid-column: 2/3;
       grid-row: 1/1;
       scale: 70%;
       transform: translateX(20px)rotate(90deg);
       transform-origin: left;
-
       align-self: start;
-      /* justify-self: end; */
-      /* text-align: right; */
-      }
+      } */
 
-      #myAudio {
-        grid-column: 1/1;
-        grid-row: 1/1;
-        /* scale: 70%;
+    #myAudio {
+        grid-column: 3/3;
+        grid-row: 1;
+        color: green;
+        /* scale: 70%; */
         transform: translateX(20px)rotate(90deg);
         transform-origin: left;
-        align-self: start; */
-        /* justify-self: end; */
-        /* text-align: right; */
+        align-self: start;
+        justify-self: end;
+        text-align: right;
         }
+
 
     .a {
       grid-column: 2/3;
@@ -139,7 +138,6 @@ background: lightgreen;
       grid-column: 2/3;
       grid-row: 3;
       font-size: 55px;
-      color: white;
       color: white;
       height: 55px;
       transform: rotate(0deg);
@@ -273,7 +271,6 @@ background: lightgreen;
 
 
 
-
     .w{
       grid-column: 2/3;
       grid-row: 1;
@@ -322,6 +319,10 @@ background: lightgreen;
       justify-self: center;
     }
 
+    button{
+      color: green;
+      height: 20px;
+    }
 
   </style>
 
@@ -330,23 +331,21 @@ background: lightgreen;
 
 <body>
 
-  <button onclick="playAudio()" type="button">Play Audio</button>
-  <button onclick="pauseAudio()" type="button">Pause Audio</button>
-
   <section id="sequenz1" class="raster">
 
+    <button onclick="playAudio()" type="button">▶️</button>
+    <button onclick="pauseAudio()" type="button">⏸</button>
+
     <audio id="myAudio">
-      <source src="horse.ogg" type="audio/ogg">
-      <source src="waenn.mp3" type="waenn/mpeg">
+      <!-- <source src="horse.ogg" type="audio/ogg"> -->
+      <source src="waenn.mp3">
       Your browser does not support the audio element.
     </audio>
 
-    <audio id="audio_with_controls" src="waenn.mp3" controls>
-    </audio>
+    <!-- <audio id="audio_with_controls" src="waenn.mp3" controls>
+    </audio> -->
 
       <div class="a">&#8674; please scroll </div>
-
-
 
   </section>
 
@@ -366,7 +365,7 @@ background: lightgreen;
   </section>
 
 
-<section id="sequenz2" class="raster">
+<section id="sequenz3" class="raster">
    <div class="w">w</div>
    <div class="ae">ä</div>
    <div class="n">n</div>
@@ -374,20 +373,22 @@ background: lightgreen;
 </section>
 
 
-</body>
-<script src="viewport.js" ></script>
-
 <script>
 var x = document.getElementById("myAudio");
-
 function playAudio() {
   x.play();
 }
-
 function pauseAudio() {
   x.pause();
 }
 </script>
+
+
+</body>
+<script src="viewport.js" ></script>
+
+
+
 
 <script>
     window.onscroll = function(ev) {
