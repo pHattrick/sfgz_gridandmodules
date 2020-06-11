@@ -2,35 +2,40 @@
 <html lang="de">
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Projektarbeit-Start-2</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
+      <title>Projektarbeit-Start-2</title>
 
-    * {
-      box-sizing: border-box;
-    }
+      <style>
 
-    body {
-      /* font: 100% sans-serif; */
-      background: gray;
-    }
+      @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab:wght@400;700&display=swap');
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        /* font: 100% sans-serif; */
+        margin: 0%;
+        background: #336666;
+      }
 
     .raster div {
       /* background: #E74C3C; */
       /* border: 1px #2C3E50 solid; */
       /* border-radius: 0.2em; */
       /* text-align: left; */
-      font-family: helvetica;
-      /* line-height: 1.8rem; */
+      font-family: 'Roboto Slab', serif;
+      font-weight: 400;
+      letter-spacing: 0.1em;    /* line-height: 1.8rem; */
       /* font-size: 2em; */
       /* background-color: yellow; */
     }
 
     .raster {
       display: grid;
-      max-width: 1024px;
+      max-width: auto;
       min-height: 400px;
       grid-template-columns: 120px 1fr 1fr;
       grid-template-rows: 10%, 1fr 1fr;
@@ -42,44 +47,23 @@
       /* background-color: green; */
     }
 
+        #sequenz1{
+        /* background: lightblue; */
+        background: #999966;
+        /* animation: hgsequenz1 5s infinite; */
+        }
+        /* @keyframes hgsequenz1 {
+        50% {background-color: #336666;}
+        } */
 
-            #sequenz1{
-/* background: lightblue; */
-background: red;
-animation: hgsequenz1 5s infinite;
-}
+        #sequenz2{
+        background: #336666;
+        color: #FFFF00;
+        }
 
-@keyframes hgsequenz1 {
-50% {background-color: blue;}
-            }
-
-            #sequenz2{
-background: lightgreen;
-/* background: lightblue; */
-            }
-
-            /* section {
-                background: #c9ffd5;
-                grid-area: section;
-            } */
-
-            #sequenz3{
-/* background: lightgreen; */
-background: lightblue;
-            }
-
-
-    /* #audio_with_controls {
-      grid-column: 2/3;
-      grid-row: 1/1;
-      scale: 70%;
-      transform: translateX(20px)rotate(90deg);
-      transform-origin: left;
-      align-self: start;
-      } */
-
-    #myAudio {
-
+        #sequenz3{
+        background: #FFFF00;
+        color: #336666;
         }
 
 
@@ -87,19 +71,21 @@ background: lightblue;
         button.play{
           grid-column: 1/1;
           grid-row: 1;
-          /* height: 20px; */
-          /* transform: translateX(20px)rotate(90deg);
-          transform-origin: left; */
-    background-color:transparent;
-  	border-radius:6px;
-  	border:1px solid #fafafa;
-  	display:inline-block;
-  	cursor:pointer;
-  	color:#ffffff;
-  	font-family:Arial;
-  	font-size:15px;
-  	padding:6px 24px;
-  	text-decoration:none;
+          /* position: sticky; */
+          /* position: -webkit-sticky; /* Safari */ 
+          /* top: 0; */
+          /* z-index: 12; */
+          background:#336666;
+          color: white;
+          border-radius:6px;
+          border:1px solid #336666;
+          display:inline-block;
+          cursor:pointer;
+
+          font-family:Arial;
+          font-size:15px;
+          padding:6px 24px;
+          text-decoration:none;
 
           align-self: start;
           justify-self: start;
@@ -108,8 +94,8 @@ background: lightblue;
         }
 
         button.play:hover{
-        background-color:black;
-
+        background:#FFFF00;
+        color: #336666;
 
         }
 
@@ -121,28 +107,25 @@ background: lightblue;
         button.pause{
           grid-column: 2/3;
           grid-row: 1;
-
           background-color:transparent;
           border-radius:6px;
-          border:1px solid #fafafa;
+          border:1px solid #336666;
           display:inline-block;
           cursor:pointer;
-          color:#ffffff;
+          color:#336666;
           font-family:Arial;
           font-size:15px;
           padding:6px 24px;
           text-decoration:none;
           /* transform: translateX(20px)rotate(90deg);
           transform-origin: left; */
-
           align-self: start;
           justify-self: start;
-
           /* text-align: left; */
         }
 
         button.pause:hover{
-          background:black;
+          background:#FFFF00;
         }
 
         button.pause:active {
@@ -150,12 +133,18 @@ background: lightblue;
           top:1px;
         }
 
+    .songtitle{
+      grid-column: 2/2;
+      grid-row: 2;
+      font-size: 233px;
+      color: #336666
+    }
 
     .a {
       grid-column: 2/3;
       grid-row: 3;
-      font-size: 55px;
-      color: white;
+      font-size: 233px;
+      color: #FFFF00;
       writing-mode: vertical-lr;
       align-self: end;
       margin-bottom: 20rem;
@@ -171,12 +160,13 @@ background: lightblue;
       grid-column: 2/3;
       grid-row: 1;
       font-size: 21px;
+
       writing-mode: vertical-lr;
       line-height: 30px;
-      animation: aa 1s infinite;
+      animation: aa 1.3s infinite;
     }
     @keyframes aa {
-      50% {line-height: 50px;}
+      50% {line-height: 100px;}
     }
 
 
@@ -196,8 +186,9 @@ background: lightblue;
     .b.isinview  {
      grid-column: 2/3;
      grid-row: 2;
+     font-family: 'Raleway', sans-serif;
      font-size: 34px;
-     color: white;
+     color: #999966;
      height: 34px;
      transform: rotate(0deg);
     }
@@ -216,8 +207,9 @@ background: lightblue;
     .c.isinview  {
       grid-column: 2/3;
       grid-row: 3;
+      font-family: 'Raleway', sans-serif;
       font-size: 55px;
-      color: white;
+      color: #999966;
       height: 55px;
       transform: rotate(0deg);
     }
@@ -232,10 +224,10 @@ background: lightblue;
       text-align:right;
 
     line-height: 30px;
-    animation: dee 1s infinite;
+    animation: dee 1.3s infinite;
   }
   @keyframes dee {
-    50% {line-height: 50px;}
+    50% {line-height: 100px;}
   }
 
 
@@ -254,9 +246,10 @@ background: lightblue;
     .e.isinview {
       grid-column: 2/3;
       grid-row: 5;
+      font-family: 'Raleway', sans-serif;
       font-size: 89px;
       height: 89px;
-      color: white;
+      color: #999966;
       transform: rotate(0deg);
     }
 
@@ -273,10 +266,10 @@ background: lightblue;
       align-items:center;
       justify-content:center; */
       line-height: 30px;
-      animation: eff 1s infinite;
+      animation: eff 1.3s infinite;
     }
     @keyframes eff {
-      50% {line-height: 50px;}
+      50% {line-height: 100px;}
     }
 
     .g {
@@ -292,8 +285,9 @@ background: lightblue;
     .g.isinview  {
       grid-column: 2/3;
       grid-row: 7;
+      font-family: 'Raleway', sans-serif;
       font-size: 144px;
-      color: white;
+      color: #999966;
       height: 144px;
       transform: rotate(0deg);
     }
@@ -312,8 +306,9 @@ background: lightblue;
     .h.isinview  {
       grid-column: 2/3;
       grid-row: 8;
+      font-family: 'Raleway', sans-serif;
       font-size: 233px;
-      color: white;
+      color: #999966;
       height: 233px;
       transform: rotate(0deg);
     }
@@ -327,10 +322,10 @@ background: lightblue;
       /* transform: rotate(180deg); */
       text-align:right;
       line-height: 30px;
-      animation: ii 1s infinite;
+      animation: ii 1.3s infinite;
     }
     @keyframes ii {
-      50% {line-height: 50px;}
+      50% {line-height: 100px;}
     }
 
 
@@ -349,9 +344,9 @@ background: lightblue;
     .j.isinview  {
       grid-column: 2/3;
       grid-row: 11;
+      font-family: 'Raleway', sans-serif;
       font-size: 377px;
-      color: white;
-      color: white;
+      color: #999966;
       height: 377px;
       transform: rotate(0deg);
     }
@@ -364,117 +359,194 @@ background: lightblue;
       /* transform: rotate(180deg); */
       text-align:right;
       line-height: 30px;
-      animation: kaa 1s infinite;
+      animation: kaa 1.3s infinite;
     }
     @keyframes kaa {
-      50% {line-height: 50px;}
+      50% {line-height: 100px;}
     }
 
 
+/* Section 3 */
 
     .w{
       grid-column: 2/3;
       grid-row: 1;
       font-size: 610px;
+      text-decoration: underline #999966 ;
       text-align: center;
       /* writing-mode: vertical-lr; */
       /* transform: rotate(180deg); */
       text-align:right;
       align-self: center;
       justify-self: center;
-      animation: mymove 5s infinite;
+      animation: wmove 2s infinite;
     }
-    @keyframes mymove {
-50% {padding: 50px;}
+    @keyframes wmove {
+50% {padding: 50px;
+grid-column: 3/3;}
 }
 
     .ae{
-      grid-column: 2/3;
+      grid-column: 3/3;
       grid-row: 2;
       font-size: 610px;
+      text-decoration: underline #999966;
       text-align: center;
       /* writing-mode: vertical-lr; */
       /* transform: rotate(180deg); */
       text-align:right;
       align-self: center;
       justify-self: center;
+      animation: aemove 2s infinite;
     }
+    @keyframes aemove {
+50% {padding: 50px;
+  grid-column: 2/3;
+}
+}
 
     .n{
       grid-column: 2/3;
       grid-row: 3;
       font-size: 610px;
+      text-decoration: underline #999966;
       text-align: center;
-      /* writing-mode: vertical-lr; */
-      /* transform: rotate(180deg); */
       text-align:right;
       align-self: center;
       justify-self: center;
+      animation: nmove 2s infinite;
     }
+    @keyframes nmove {
+50% {padding: 50px;
+grid-column: 3/3;}
+}
 
     .nn{
-      grid-column: 2/3;
+      grid-column: 3/3;
       grid-row: 4;
       font-size: 610px;
+      text-decoration: underline #999966;
       text-align: center;
       /* writing-mode: vertical-lr; */
       /* transform: rotate(180deg); */
       text-align:right;
       align-self: center;
       justify-self: center;
+      animation: nnmove 2s infinite;
     }
+    @keyframes nnmove {
+    50% {padding: 50px;
+    grid-column: 2/3;}
+}
+
+
+.impressum_w {
+  grid-column: 3/3;
+  grid-row: 1;
+  text-align: center;
+  text-align:right;
+  align-self: center;
+  justify-self: center;
+  animation: move_w 2s infinite;
+}
+@keyframes move_w {
+  50% {padding: 50px;
+  grid-column: 2/2;}
+}
+
+.impressum_ae {
+  grid-column: 2/2;
+  grid-row: 2;
+  text-align: center;
+  text-align:right;
+  align-self: center;
+  justify-self: center;
+  animation: move_ae 2s infinite;
+}
+@keyframes move_ae {
+  50% {padding: 50px;
+  grid-column: 3/3;}
+}
+
+.impressum_n {
+  grid-column: 3/3;
+  grid-row: 3;
+  text-align: center;
+  text-align:right;
+  align-self: center;
+  justify-self: center;
+  animation: move_n 2s infinite;
+}
+@keyframes move_n {
+  50% {padding: 50px;
+  grid-column: 2/2;}
+}
+
+.impressum_nn {
+  grid-column: 2/2;
+  grid-row: 4;
+  text-align: center;
+  text-align:right;
+  align-self: center;
+  justify-self: center;
+  animation: move_nn 2s infinite;
+}
+@keyframes move_nn {
+  50% {padding: 50px;
+  grid-column: 3/3;}
+}
 
 
 
   </style>
 
-
 </head>
 
 <body>
 
+<!-- Sequenz 1 -->
   <section id="sequenz1" class="raster">
-
-    <!-- <a href="button" class="button.play">Play Song</a> -->
-
 
     <button onclick="playAudio()" type="button" class="play">Play Song</button>
     <button onclick="pauseAudio()" type="button" class="pause">II</button>
 
     <audio id="myAudio">
-      <!-- <source src="horse.ogg" type="audio/ogg"> -->
       <source src="waenn.mp3">
       Your browser does not support the audio element.
     </audio>
 
-    <!-- <audio id="audio_with_controls" src="waenn.mp3" controls>
-    </audio> -->
-      <div class="a">&#8674;</div>
+    <div class="songtitle">____</div>
+    <div class="a">&#10141;</div>
 
   </section>
 
+<!-- Sequenz 2 -->
   <section id="sequenz2" class="raster">
-    <div class="aa">  &#x202F; &#95; ​&#x202F; &#95; &#x202F; &#95; &#x202F; &#95; &#x202F;  das Wort  &#x202F; &#95; ​&#x202F; &#95; &#x202F; &#95; &#x202F; &#95; &#x202F;  nöd </div>
+    <div class="aa">____ das Wort ____ nöd </div>
     <div class="b checkview">wär,</div>
     <div class="c checkview">wär</div>
     <div class="d">villicht alles anderscht, ich</div>
     <!-- <div class="dplus">villicht</div> -->
     <div class="e checkview">wär</div>
-    <div class="f">scho längscht Millionär. &#x202F; &#95; ​&#x202F; &#95; &#x202F; &#95; &#x202F; &#95; &#x202F; das Wort ____ nöd</div>
+    <div class="f">scho längscht Millionär, ____ das Wort ____ nöd</div>
     <div class="g checkview">wär,</div>
     <div class="h checkview">wär</div>
-    <div class="i">villicht alles anderscht und d Erdä</div>
+    <div class="i">villicht alles anderscht und d'Erdä</div>
     <div class="j checkview">drehti</div>
     <div class="k">sich umgekehrt. </div>
-
   </section>
 
-
+<!-- Sequenz 3 -->
 <section id="sequenz3" class="raster">
    <div class="w">w</div>
    <div class="ae">ä</div>
    <div class="n">n</div>
    <div class="nn">n</div>
+
+   <div class="impressum_w">Design & Code: Patrick Hoffmann</div>
+   <div class="impressum_ae">Projektarbeit «Grids and Modules», 06.2020</div>
+   <div class="impressum_n">Lehrgang «Interaction Design» (IAD19), SfGZ</div>
+   <div class="impressum_nn">Quelle: Bligg'n'Lexx «Wänn»</div>
 </section>
 
 
@@ -493,9 +565,7 @@ function pauseAudio() {
 <script src="viewport.js" ></script>
 
 
-
-
-<script>
+<!-- <script>
     window.onscroll = function(ev) {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             setTimeout(function(){
@@ -503,6 +573,6 @@ function pauseAudio() {
             }, 1000)
         }
     };
-</script>
+</script> -->
 
 </html>
