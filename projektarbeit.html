@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
 
+<head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
       <title>Projektarbeit Grid & Modules</title>
 
-      <style>
+<style>
 
       @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab:wght@400;700&display=swap');
 
@@ -19,6 +18,7 @@
         /* font: 100% sans-serif; */
         margin: 0%;
         background: #1F2833;
+        overflow-x: hidden;
       }
 
     .raster div {
@@ -28,9 +28,7 @@
       /* text-align: left; */
       font-family: 'Roboto Slab', serif;
       font-weight: 400;
-      letter-spacing: 0.1em;    /* line-height: 1.8rem; */
-      /* font-size: 2em; */
-      /* background-color: yellow; */
+      letter-spacing: 0.1em;
     }
 
     .raster {
@@ -44,7 +42,6 @@
       border-bottom: 200px;
       min-height:110vh;
       width:100vw;
-      /* background-color: green; */
     }
 
         #sequenz1{
@@ -52,9 +49,6 @@
         background: #C5C6C7;
         /* animation: hgsequenz1 5s infinite; */
         }
-        /* @keyframes hgsequenz1 {
-        50% {background-color: #1F2833;}
-        } */
 
         #sequenz2{
         background: #1F2833;
@@ -66,7 +60,7 @@
         color: #1F2833;
         }
 
-
+/* Sequenz 1 */
 
         button.play{
           grid-column: 1/1;
@@ -86,11 +80,8 @@
           font-size:15px;
           padding:6px 24px;
           text-decoration:none;
-
           align-self: start;
           justify-self: start;
-
-          /* text-align: left;  */
         }
 
         button.play:hover{
@@ -117,11 +108,8 @@
           font-size:15px;
           padding:6px 24px;
           text-decoration:none;
-          /* transform: translateX(20px)rotate(90deg);
-          transform-origin: left; */
           align-self: start;
           justify-self: start;
-          /* text-align: left; */
         }
 
         button.pause:hover{
@@ -155,6 +143,7 @@
       50% {margin-bottom: 50px;}
     }
 
+/* Sequenz 2 */
 
     .aa {
       grid-column: 2/3;
@@ -169,10 +158,6 @@
       50% {line-height: 100px;}
     }
 
-
-
-
-
      .b {
       grid-column: 2/3;
       grid-row: 2;
@@ -184,15 +169,14 @@
       justify-self: start;
     }
     .b.isinview  {
-     grid-column: 2/3;
-     grid-row: 2;
-     font-family: 'Raleway', sans-serif;
-     font-size: 34px;
-     color: #C5C6C7;
-     height: 34px;
-     transform: rotate(0deg);
+      grid-column: 2/3;
+      grid-row: 2;
+      font-family: 'Raleway', sans-serif;
+      font-size: 34px;
+      color: #C5C6C7;
+      height: 34px;
+      transform: rotate(0deg);
     }
-
 
     .c {
       grid-column: 2/3;
@@ -214,7 +198,6 @@
       transform: rotate(0deg);
     }
 
-
     .d {
       grid-column: 2/3;
       grid-row: 4;
@@ -222,16 +205,12 @@
       writing-mode: vertical-lr;
       /* transform: rotate(180deg); */
       text-align:right;
-
-    line-height: 30px;
-    animation: dee 1.3s infinite;
-  }
-  @keyframes dee {
-    50% {line-height: 100px;}
-  }
-
-
-
+      line-height: 30px;
+      animation: dee 1.3s infinite;
+    }
+    @keyframes dee {
+      50% {line-height: 100px;}
+    }
 
     .e {
       grid-column: 2/3;
@@ -253,18 +232,12 @@
       transform: rotate(0deg);
     }
 
-
     .f {
       grid-column: 2/3;
       grid-row: 6;
       font-size: 21px;
       writing-mode: vertical-lr;
-      /* transform: rotate(180deg); */
       text-align:right;
-      /* display: flex;
-      flex-direction: column;
-      align-items:center;
-      justify-content:center; */
       line-height: 30px;
       animation: eff 1.3s infinite;
     }
@@ -292,7 +265,6 @@
       transform: rotate(0deg);
     }
 
-
     .h {
       grid-column: 2/3;
       grid-row: 8;
@@ -313,7 +285,6 @@
       transform: rotate(0deg);
     }
 
-
     .i {
       grid-column: 2/3;
       grid-row: 9;
@@ -328,8 +299,6 @@
       50% {line-height: 100px;}
     }
 
-
-
     .j {
       grid-column: 2/3;
       grid-row: 11;
@@ -339,7 +308,6 @@
       transition: 3s ease;
       align-self: start;
       justify-self: start;
-
     }
     .j.isinview  {
       grid-column: 2/3;
@@ -382,9 +350,9 @@
       animation: wmove 2s infinite;
     }
     @keyframes wmove {
-50% {padding: 50px;
-grid-column: 3/3;}
-}
+      50% {padding: 50px;
+      grid-column: 3/3;}
+    }
 
     .ae{
       grid-column: 3/3;
@@ -392,17 +360,15 @@ grid-column: 3/3;}
       font-size: 610px;
       text-decoration: underline #C5C6C7;
       text-align: center;
-      /* writing-mode: vertical-lr; */
-      /* transform: rotate(180deg); */
       text-align:right;
       align-self: center;
       justify-self: center;
       animation: aemove 2s infinite;
     }
     @keyframes aemove {
-50% {padding: 50px;
-  grid-column: 2/3;
-}
+      50% {padding: 50px;
+      grid-column: 2/3;
+    }
 }
 
     .n{
@@ -417,9 +383,9 @@ grid-column: 3/3;}
       animation: nmove 2s infinite;
     }
     @keyframes nmove {
-50% {padding: 50px;
-grid-column: 3/3;}
-}
+      50% {padding: 50px;
+      grid-column: 3/3;}
+    }
 
     .nn{
       grid-column: 3/3;
@@ -427,78 +393,86 @@ grid-column: 3/3;}
       font-size: 610px;
       text-decoration: underline #C5C6C7;
       text-align: center;
-      /* writing-mode: vertical-lr; */
-      /* transform: rotate(180deg); */
       text-align:right;
       align-self: center;
       justify-self: center;
       animation: nnmove 2s infinite;
     }
     @keyframes nnmove {
-    50% {padding: 50px;
-    grid-column: 2/3;}
-}
+      50% {padding: 50px;
+      grid-column: 2/3;}
+    }
 
 
-.impressum_w {
-  grid-column: 3/3;
-  grid-row: 1;
-  text-align: center;
-  text-align:right;
-  align-self: center;
-  justify-self: center;
-  animation: move_w 2s infinite;
-}
-@keyframes move_w {
-  50% {padding: 50px;
-  grid-column: 2/2;}
-}
+    .impressum_w {
+      grid-column: 3/3;
+      grid-row: 1;
+      text-align: center;
+      text-align:right;
+      align-self: center;
+      justify-self: center;
+      animation: move_w 2s infinite;
+    }
+    @keyframes move_w {
+      50% {padding: 50px;
+      grid-column: 2/2;}
+    }
 
-.impressum_ae {
-  grid-column: 2/2;
-  grid-row: 2;
-  text-align: center;
-  text-align:right;
-  align-self: center;
-  justify-self: center;
-  animation: move_ae 2s infinite;
-}
-@keyframes move_ae {
-  50% {padding: 50px;
-  grid-column: 3/3;}
-}
+    .impressum_ae {
+      grid-column: 2/2;
+      grid-row: 2;
+      text-align: center;
+      text-align:right;
+      align-self: center;
+      justify-self: center;
+      animation: move_ae 2s infinite;
+    }
+    @keyframes move_ae {
+      50% {padding: 50px;
+        grid-column: 3/3;}
+      }
 
-.impressum_n {
-  grid-column: 3/3;
-  grid-row: 3;
-  text-align: center;
-  text-align:right;
-  align-self: center;
-  justify-self: center;
-  animation: move_n 2s infinite;
-}
-@keyframes move_n {
-  50% {padding: 50px;
-  grid-column: 2/2;}
-}
+    .impressum_n {
+      grid-column: 3/3;
+      grid-row: 3;
+      text-align: center;
+      text-align:right;
+      align-self: center;
+      justify-self: center;
+      animation: move_n 2s infinite;
+    }
+    @keyframes move_n {
+      50% {padding: 50px;
+      grid-column: 2/2;}
+    }
 
-.impressum_nn {
-  grid-column: 2/2;
-  grid-row: 4;
-  text-align: center;
-  text-align:right;
-  align-self: center;
-  justify-self: center;
-  animation: move_nn 2s infinite;
-}
-@keyframes move_nn {
-  50% {padding: 50px;
-  grid-column: 3/3;}
-}
+    .impressum_nn {
+      grid-column: 2/2;
+      grid-row: 4;
+      text-align: center;
+      text-align:right;
+      align-self: center;
+      justify-self: center;
+      animation: move_nn 2s infinite;
+    }
+    @keyframes move_nn {
+      50% {padding: 50px;
+      grid-column: 3/3;}
+    }
 
+    .backtotop{
+      grid-column: 1/1;
+      grid-row: 5;
+      margin-bottom: 200px;
+      writing-mode: vertical-lr;
+      font-size: 10rem;
+      transform: rotate(180deg);
+      color: #1F2833;
+      text-decoration: none;
+      line-height: 16px;
+      }
 
-
-  </style>
+</style>
 
 </head>
 
@@ -526,7 +500,6 @@ grid-column: 3/3;}
     <div class="b checkview">wär,</div>
     <div class="c checkview">wär</div>
     <div class="d">villicht alles anderscht, ich</div>
-    <!-- <div class="dplus">villicht</div> -->
     <div class="e checkview">wär</div>
     <div class="f">scho längscht Millionär, ____ das Wort ____ nöd</div>
     <div class="g checkview">wär,</div>
@@ -547,6 +520,8 @@ grid-column: 3/3;}
    <div class="impressum_ae">Projektarbeit «Grids and Modules», 06.2020</div>
    <div class="impressum_n">Lehrgang «Interaction Design» (IAD19), SfGZ</div>
    <div class="impressum_nn">Quelle: Bligg'n'Lexx «Wänn»</div>
+
+   <a href="#top" class="backtotop">&#8677;</a>
 </section>
 
 
@@ -560,10 +535,7 @@ function pauseAudio() {
 }
 </script>
 
-
-</body>
 <script src="viewport.js" ></script>
-
 
 <!-- <script>
     window.onscroll = function(ev) {
@@ -574,5 +546,7 @@ function pauseAudio() {
         }
     };
 </script> -->
+
+</body>
 
 </html>
